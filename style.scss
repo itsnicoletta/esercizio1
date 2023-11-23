@@ -1,0 +1,74 @@
+$color1: #fcbd00; 
+$color2: darken($color1, 30%);
+$color3: #faf9f6;
+$font-size-base: 3.5rem;
+$font-size-big: $font-size-base * 1.5; 
+
+body {
+    font-family: "poppins", sans-serif;
+    margin: 50px 50px 0px 50px;
+    background-color: $color3;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+}
+
+.main {
+    flex: 1;
+}
+
+h1 {
+    font-size: $font-size-base;
+    text-align: center;
+}
+
+.yellow {
+    color: $color1;
+}
+
+footer {
+    justify-content: flex-end;
+    text-align: right;
+    color: $color2;
+}
+
+
+.card {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.tile-image {
+    object-fit: cover;
+    display: inline;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+@media (min-width: 680px) {
+    h1 {
+        font-size: $font-size-big
+    }
+
+    .card {
+        display: inline-block;
+        width: 48%;
+        text-align: justify;
+    }
+
+    .tile-image {
+        float: left;
+        margin-right: 30px;
+        height: 200px;
+    }
+}
